@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Polar V3</title>
+  </head>
+  <body>
+    <header>
+     <h1>❄️ Polar V3 ❄️</h1>
+          <nav>
+        <a href="index.html" class="active">🏠 Home</a>
+        <a href="games.html">🎮 Games</a>
+        <a href="https://discord.gg/kvTCs2QPev" target="_blank">💬 Discord</a>
+        <a href="apps.html">📱 Apps</a>
+        <a href="settings.html">⚙️ Settings</a>
+      <a href="credits.html">😎 Credits</a>
+    </nav>
+    </header>
+    <div class="side-panel left">
+    <h3>📢 What's New</h3>
+    <ul>
+        <li>New games added</li>
+        <li>UI improvements</li>
+      <li>Discord updated</li>
+      <li>New features</li>
+      <li>Updated Search bar</li>
+    </ul>
+</div>
+
+<div class="side-panel right">
+    <h3>📅 Upcoming Events</h3>
+    <ul>
+        <li>Polar V3 released!</li>
+        <li>New apps coming soon</li>
+        <li>100+ Games</li>
+      <li>My <strong>BIRTHDAY!</strong> September 13</li>
+      <li>Evan's <strong>BIRTHDAY!</strong> March 7th</li>
+    
+    </ul>
+</div>
+<section class="hero">
+<h2><strong>Welcome to Polar V3</strong></h2>
+  <h3><strong>Let Polar V3 freeze up your boredom</strong></h3>
+
+<div class="search-panel">
+<br>
+  <br>
+<form id="searchForm">
+    <input
+        id="searchInput"
+        type="text"
+        placeholder="Enter a website Url"
+        style="padding:12px;width:100%;border:none;border-radius:10px;background:transparent;color:white;outline:none;"
+    >
+</form>
+</div>
+
+<div id="frameContainer" style="margin-top:20px; display:none;">
+    <iframe
+        id="siteFrame"
+        style="width:90%;height:600px;border:none;border-radius:12px;"
+    ></iframe>
+</div>
+
+<div id="frameContainer" style="margin-top:20px; display:none;">
+    <iframe
+        id="siteFrame"
+        style="width:90%;height:600px;border:none;border-radius:12px;"
+    ></iframe>
+</div>
+
+<script>
+document.getElementById("searchForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let url = document.getElementById("searchInput").value.trim();
+
+    if (!url.startsWith("http://") && !url.startsWith("https://")) {
+        url = "https://" + url;
+    }
+
+    document.getElementById("frameContainer").style.display = "block";
+    document.getElementById("siteFrame").src = url;
+});
+</script>
+  
+ <br>
+   <br>
+   <br>
+   <br>
+   <br>
+  <br>
+    <br>
+    <br>
+    <br>
+  
+       <h4 style="margin-top:30px;">
+    <strong>Quote: "Just because something is hard and you face obstacles doesn't mean you give up, that's called life." — Wyllyia</strong>
+</h4>
+
+
+<footer>
+    © 2026 Polar V3 • Created by Will
+</footer>
+  </body>
+</html>
